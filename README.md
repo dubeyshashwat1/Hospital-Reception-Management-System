@@ -51,9 +51,7 @@ Follow these steps to set up and run the project on your local machine.
 ### Table: `patient`
 
 Fields include:
-- `LOG_ID`, `POST_NAME`, `INCIDENT_TIME`, `DESCRIPTION`
-- `OFFICER_NAME`, `OFFICER_ID`, `LOCATION`
-- `WEATHER_CONDITION`, `WITNESS_NAME`, `VEHICLE_NUMBER`, `VEHICLE_ID`
+- 'id', 'name', 'age', 'gender', 'phone', 'address', 'disease', 'doctor', 'appointment_date'
 
 SQL file is in: `sql/hospital_db_schema.sql`
 
