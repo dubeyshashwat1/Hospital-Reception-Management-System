@@ -40,7 +40,7 @@ Follow these steps to set up and run the project on your local machine.
 ### 🔹 Step 3: Run the App
 
 1. Compile all `.java` files.
-2. Right-click on `BorderlogGUI` → click `void main(String[] args)`.
+2. Right-click on `HospitalReception` → click `void main(String[] args)`.
 3. App GUI will open.
 
 ---
