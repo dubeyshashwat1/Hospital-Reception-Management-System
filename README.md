@@ -1,68 +1,127 @@
-# Hospital-Reception-Management-System
+# Hospital Reception Management System
 
-A simple GUI-based logging system for a hospital reception management system. Built using Java (BlueJ) and connected to a MySQL (phpMyAdmin) database using JDBC via XAMPP.
-
----
-
-## 💻 Requirements
-
-- BlueJ IDE
-- Java JDK (version 17 or above)
-- XAMPP Control Panel
-- MySQL (phpMyAdmin)
-- MySQL JDBC Connector
+A full-featured hospital reception management system built using Java Swing and MySQL, with secure login, patient record management, CSV export/import, reporting, and a modern GUI interface.
 
 ---
 
+## Features Implemented
 
-
-## 🛠️ Project Setup
-
-Follow these steps to set up and run the project on your local machine.
-
-
-
-## ⚙️ How to Run the Project
-
-### 🔹 Step 1: Set up the Database
-
-1. Open **XAMPP** and start **Apache** & **MySQL**.
-2. Open your browser → go to `http://localhost/phpmyadmin`.
-3. Create a new database named `hospital_db`.
-4. Import the SQL file from the `sql/hospital_db_schema.sql`.
-
-### 🔹 Step 2: Setup in BlueJ
-
-1. Open BlueJ and open this project.
-2. Go to `Project > Use Library > Add External JARs` and add the MySQL JDBC connector JAR file.
-
-
-### 🔹 Step 3: Run the App
-
-1. Compile all `.java` files.
-2. Right-click on `HospitalReception` → click `void main(String[] args)`.
-3. App GUI will open.
+- Add, Update, Delete patient records  
+- Unique ID generation  
+- Search patients by ID, Name, Phone, or Doctor  
+- CSV Export and Import of patient records  
+- Daily, Monthly Reports and Patient Statistics  
+- Dark/Light theme toggle  
+- Validation for name, phone, age, and appointment date  
+- Responsive and user-friendly UI for receptionists  
 
 ---
 
-## 🗃️ Database Design
+## Technologies Used
 
-### Database: `hospital_db`
-### Table: `patient`
-
-Fields include:
-- 'id', 'name', 'age', 'gender', 'phone', 'address', 'disease', 'doctor', 'appointment_date'
-
-SQL file is in: `sql/hospital_db_schema.sql`
-
----
-
-## ✨ Features
-
-- Simple GUI for log entry
-- Connected to MySQL using JDBC
-
+| Component         | Technology             |
+|------------------|------------------------|
+| Frontend UI      | Java Swing             |
+| Backend Logic     | Java (OOP, JDBC)       |
+| Database         | MySQL (phpMyAdmin)     |
+| Development IDE  | BlueJ                  |
+| Local Server     | XAMPP                  |
+| Version Control  | Git and GitHub         |
 
 ---
 
+## System Architecture
 
+```
+User Input (Java Swing GUI)
+       ↓
+Action Events / Listeners
+       ↓
+Java Backend Logic (CRUD, Validation)
+       ↓
+MySQL Database via JDBC
+       ↓
+Reports / CSV Export / UI Refresh
+```
+
+---
+
+## Screenshots
+
+(Add screenshots to a /screenshots folder and link them below)
+
+- Login Screen  
+- Patient Entry Form  
+- Search/Filter View  
+- Reports (Daily/Monthly/Statistics)  
+- CSV File Opened in Excel  
+- Example of Error Message on Invalid Input  
+
+---
+
+## How to Run
+
+1. Clone the repo or download the zip  
+2. Start XAMPP and open phpMyAdmin  
+3. Create a database named `hospital_db`  
+4. The table will auto-create on first launch  
+5. Edit `config.properties` with your DB username and password  
+6. Run the project using BlueJ or any Java IDE  
+7. Login credentials:  
+   - Username: admin  
+   - Password: admin123
+
+---
+
+## Validation Details
+
+- Name: Only alphabets and spaces (2–50 characters)  
+- Phone: Exactly 10 digits  
+- Age: Between 0 and 150  
+- Date: Format YYYY-MM-DD  
+- SQL injection is prevented using prepared statements
+
+---
+
+## Reports
+
+- Daily Report: New patients and appointments for the current day  
+- Monthly Report: Gender distribution, average age, total registrations  
+- Statistics: Age range, gender breakdown, appointments summary
+
+---
+
+## Project Structure
+
+```
+├── /src
+│   └── HospitalReceptionSystem.java
+├── /screenshots
+│   └── (login.png, entry.png, report.png, etc.)
+├── config.properties
+├── README.md
+```
+
+---
+
+## Author
+
+[Your Name]  
+Hospital Reception System — Semester Project  
+Course Code: [Your Course Code]  
+Instructor: [Instructor Name]  
+Submission Date: 10 June 2025
+
+---
+
+## Conclusion
+
+This project helped me gain practical skills in GUI programming, database connectivity, input validation, and full-stack Java application development. It simulates a real-world hospital receptionist workflow with all essential operations.
+
+---
+
+## GitHub Repository Link
+
+https://github.com/YourUsername/Hospital-Reception-Management-System
+
+(Replace the link above with your actual GitHub repository URL)
