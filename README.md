@@ -46,9 +46,9 @@ Reports / CSV Export / UI Refresh
 
 ---
 
-## Screenshots
+## FEATURES
 
-(Add screenshots to a /screenshots folder and link them below)
+
 
 - Login Screen  
 - Patient Entry Form  
@@ -106,10 +106,10 @@ Reports / CSV Export / UI Refresh
 
 ## Author
 
-[Your Name]  
+[SHASHWAT DUBEY]  
 Hospital Reception System — Semester Project  
-Course Code: [Your Course Code]  
-Instructor: [Instructor Name]  
+Course Code: [R1UC201C]  
+Instructor: [GUVI TEAM]  
 Submission Date: 10 June 2025
 
 ---
