@@ -18,9 +18,9 @@ import java.util.Properties;
  * A comprehensive patient management system with robust error handling,
  * data validation, and innovative features.
  * 
- * @author [Your Name]
+ * @author [SHASHWAT DUBEY]
  * @version 2.0
- * @since 2024
+ * @since 2025
  */
 public class HospitalReceptionSystem extends JFrame implements ActionListener {
     
